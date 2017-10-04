@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tailleBagage">
+        <item>Petits</item>
+        <item>Moyens</item>
+        <item>Grands</item>
+    </string-array>
+
+    <string-array name="flexibilite">
+        <item>pile à l heure</item>
+        <item>à +/- 15 minutes</item>
+        <item>à +/- 30 minutes</item>
+        <item>à +/- 1 heure</item>
+        <item>à +/- 2 heures</item>
+
+    </string-array>
+</resources>

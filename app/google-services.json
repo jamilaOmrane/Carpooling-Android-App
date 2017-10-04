@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "310766835077",
+    "firebase_url": "https://projetmobile-ed855.firebaseio.com",
+    "project_id": "projetmobile-ed855",
+    "storage_bucket": "projetmobile-ed855.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310766835077:android:7831c3e9b6b30abd",
+        "android_client_info": {
+          "package_name": "com.mobile.jamila.projetmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310766835077-u5qpmf7iknstlc6h06tgt0crkqglk0i2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobile.jamila.projetmobile",
+            "certificate_hash": "182806d170304ebeb71fbb81f43d93fc761126ee"
+          }
+        },
+        {
+          "client_id": "310766835077-t8pbcckfrh499fjhl3g6vb0rcnifihvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOKao5XtNL5PsCDKFXm9ad9iCJ-A0xiOQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310766835077-t8pbcckfrh499fjhl3g6vb0rcnifihvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

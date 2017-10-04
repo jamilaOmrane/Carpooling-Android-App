@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_propose_trajet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mobile.jamila.projetmobile.ProposeTrajetActivity"
+    >
+    <RelativeLayout
+
+        style="@style/Components"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/IteneraireLayout">
+        <TextView
+            android:text="Point de départ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/TVpointDepart"
+            style="@style/textViewLabel"
+        />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/lieu_depart"
+            android:layout_below="@+id/TVpointDepart"
+            android:layout_marginTop="8dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/ETpointDepart"
+            android:layout_below="@+id/TVpointDepart"
+            android:layout_marginLeft="38dp"
+            />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:paddingTop="@dimen/paddingORmargin"
+            android:text="Point d'arrivée"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ETpointDepart"
+            android:id="@+id/TVpointArrivee"
+            style="@style/textViewLabel"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/lieu_arrivee"
+            android:layout_below="@+id/TVpointArrivee"
+            android:layout_marginTop="8dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/ETpointArrivee"
+            android:layout_below="@+id/TVpointArrivee"
+            android:layout_marginLeft="38dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        style="@style/Components"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/HoraireLayout"
+        android:layout_below="@+id/IteneraireLayout">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aller-retour"
+            android:paddingRight="7dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/CBallerRetour"
+            android:checked="true" />
+
+        <TextView
+            android:paddingTop="@dimen/paddingORmargin"
+            android:text="Date d'aller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/TVdateAller"
+            android:layout_below="@+id/CBallerRetour"
+            style="@style/textViewLabel"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/calendrier_depart"
+            android:layout_below="@+id/TVdateAller"
+            android:layout_marginTop="11dp"
+            />
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/ETdateAller"
+            android:layout_below="@+id/TVdateAller"
+            android:layout_marginLeft="40dp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/temps_depart"
+            android:layout_below="@+id/TVdateAller"
+            android:layout_marginTop="11dp"
+            android:layout_toLeftOf="@+id/ETheureAller"
+            android:layout_marginLeft="25dp"
+            android:layout_toEndOf="@+id/ETdateAller"
+            android:layout_toRightOf="@+id/ETdateAller"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/ETheureAller"
+            android:layout_below="@+id/TVdateAller"
+            android:layout_toEndOf="@+id/ETdateAller"
+            android:layout_toRightOf="@+id/ETdateAller"
+            android:layout_marginLeft="60dp"
+            />
+        <!--Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ETdateAller"
+            android:id="@+id/SpinnerHeurDepart"/-->
+        <RelativeLayout
+            android:id="@+id/retourLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ETdateAller"
+            >
+            <TextView
+                android:layout_marginTop="15dp"
+                android:paddingTop="@dimen/paddingORmargin"
+                android:text="Date retour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/TVdateRetour"
+                style="@style/textViewLabel"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/calendrier_arrivee"
+                android:layout_below="@+id/TVdateRetour"
+                android:layout_marginTop="11dp"
+                />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/ETdateRetour"
+                android:layout_below="@+id/TVdateRetour"
+                android:layout_marginLeft="40dp"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/temps_arrivee"
+                android:layout_below="@+id/TVdateRetour"
+                android:layout_marginTop="11dp"
+                android:layout_toLeftOf="@+id/ETheureRetour"
+                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@+id/ETdateRetour"
+                android:layout_toRightOf="@+id/ETdateRetour"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/ETheureRetour"
+                android:layout_below="@+id/TVdateRetour"
+                android:layout_toEndOf="@+id/ETdateRetour"
+                android:layout_toRightOf="@+id/ETdateRetour"
+                android:layout_marginLeft="60dp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        style="@style/Boutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuer"
+        android:layout_below="@+id/HoraireLayout"
+        android:id="@+id/Bcontinuer"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>

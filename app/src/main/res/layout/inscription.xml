@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    style="@style/Components"
+    >
+
+    <EditText
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:hint="E-mail"
+        style="@style/editText"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:id="@+id/mail"/>
+    <EditText
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:hint="Mot de passe"
+        style="@style/editText"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:id="@+id/password"/>
+
+
+    <EditText
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:hint="Numéro d'inscription"
+        style="@style/editText"
+        android:gravity="center"
+        android:inputType="number"
+        android:id="@+id/inscri"/>
+
+
+    <EditText
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:hint="Prénom"
+        style="@style/editText"
+        android:gravity="center"
+        android:id="@+id/prenom"/>
+
+    <EditText
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:hint="Nom"
+        style="@style/editText"
+        android:gravity="center"
+        android:id="@+id/nom"
+        />
+
+    <EditText
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:hint="Niveau et filière"
+        style="@style/editText"
+        android:gravity="center"
+        android:id="@+id/niveauFiliere"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CBconducteur"
+        android:text="Conducteur"
+        android:checked="true"/>
+
+    <EditText
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:hint="Voiture"
+        style="@style/editText"
+        android:gravity="center"
+        android:id="@+id/voiture"/>
+
+    <Button
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="wrap_content"
+        style="@style/Boutton"
+        android:text="Valider"
+        android:id="@+id/bouttonInscri"/>
+
+</LinearLayout>

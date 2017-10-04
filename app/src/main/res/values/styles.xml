@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Components" parent="AppTheme">
+        <item name="android:background">@color/colorComponentsBackground</item>
+        <item name="android:paddingTop">@dimen/paddingORmargin</item>
+        <item name="android:paddingBottom">@dimen/paddingORmargin</item>
+        <item name="android:paddingLeft">@dimen/paddingORmargin</item>
+        <item name="android:paddingRight">@dimen/paddingORmargin</item>
+        <item name="android:layout_marginTop">@dimen/paddingORmargin</item>
+        <item name="android:layout_marginLeft">@dimen/paddingORmargin</item>
+        <item name="android:layout_marginRight">@dimen/paddingORmargin</item>
+    </style>
+    <style name="Boutton" parent="AppTheme">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textColor">@color/colorComponentsBackground</item>
+        <item name="android:textSize">@dimen/labelSize</item>
+        <item name="android:layout_marginTop">@dimen/paddingORmargin</item>
+        <item name="android:layout_marginLeft">@dimen/paddingORmargin</item>
+        <item name="android:layout_marginRight">@dimen/paddingORmargin</item>
+    </style>
+    <style name="textViewLabel" parent="AppTheme">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/labelSize</item>
+    </style>
+    <style name="Important" parent="AppTheme">
+        <item name="android:textColor">@color/textImportant</item>
+        <item name="android:textSize">@dimen/ImportantSize</item>
+    </style>
+    <style name="MoyennementImportant" parent="AppTheme">
+        <item name="android:textColor">@color/textImportant</item>
+        <item name="android:textSize">@dimen/TextMoyennemntImportantSize</item>
+    </style>
+    <style name="FaiblementImportant" parent="AppTheme">
+        <item name="android:textColor">@color/textMoyennementImportant</item>
+        <item name="android:textSize">@dimen/TextFaiblementImportantSize</item>
+    </style>
+
+    <style name="ListePropositionConducteurInfos" parent="Components">
+        <item name="android:width">@dimen/widthConducteurComponent</item>
+        <item name="android:height">@dimen/heightConducteurComponent</item>
+    </style>
+
+    <style name="editText" parent="AppTheme">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+    </style>
+
+</resources>

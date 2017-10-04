@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/Components"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/TextViewWidht"
+                    android:layout_height="wrap_content"
+                    android:text="Départ :"
+                    style="@style/textViewLabel"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/editTextHeight"
+                    style="@style/editText"
+                    android:id="@+id/villeDepart"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/TextMoyennemntImportantSize"
+                    android:paddingTop="@dimen/paddingORmargin"
+                    android:paddingLeft="@dimen/margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/TextViewWidht"
+                    android:layout_height="wrap_content"
+                    android:text="Arrivée :"
+                    style="@style/textViewLabel"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/editTextHeight"
+                    style="@style/editText"
+                    android:id="@+id/villeArrivee"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/TextMoyennemntImportantSize"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingTop="@dimen/paddingORmargin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/TextViewWidht"
+                    android:layout_height="wrap_content"
+                    android:text="Date départ :"
+                    style="@style/textViewLabel"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/editTextHeight"
+                    style="@style/editText"
+                    android:id="@+id/dateDepart"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/TextMoyennemntImportantSize"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingTop="@dimen/paddingORmargin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/TextViewWidht"
+                    android:layout_height="wrap_content"
+                    android:text="Date retour :"
+                    style="@style/textViewLabel"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/editTextHeight"
+                    style="@style/editText"
+                    android:id="@+id/dateRetour"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/TextMoyennemntImportantSize"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingTop="@dimen/paddingORmargin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/TextViewWidht"
+                    android:layout_height="wrap_content"
+                    android:text="Détails :"
+                    style="@style/textViewLabel"
+                    />
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/editText"
+                   >
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_marginTop="@dimen/margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="@dimen/ImageSize"
+                            android:layout_height="@dimen/ImageSize"
+                            android:src="@drawable/retard"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/editTextHeight"
+                            android:id="@+id/retard"
+                            style="@style/MoyennementImportant"
+                            android:layout_marginLeft="@dimen/margin"
+                            android:textColor="@color/colorPrimary"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="@dimen/ImageSize"
+                            android:layout_height="@dimen/ImageSize"
+                            android:src="@drawable/bag"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/editTextHeight"
+                            android:id="@+id/bag"
+                            style="@style/MoyennementImportant"
+                            android:layout_marginLeft="@dimen/margin"
+                            android:textColor="@color/colorPrimary"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/Components"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/TextViewWidht"
+                    android:layout_height="wrap_content"
+                    android:text="Nom :"
+                    style="@style/textViewLabel"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/editTextHeight"
+                    style="@style/editText"
+                    android:id="@+id/nom"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/TextMoyennemntImportantSize"
+                    android:paddingTop="@dimen/paddingORmargin"
+                    android:paddingLeft="@dimen/margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/TextViewWidht"
+                    android:layout_height="wrap_content"
+                    android:text="Prénom :"
+                    style="@style/textViewLabel"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/editTextHeight"
+                    style="@style/editText"
+                    android:id="@+id/prenom"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/TextMoyennemntImportantSize"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingTop="@dimen/paddingORmargin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/TextViewWidht"
+                    android:layout_height="wrap_content"
+                    android:text="Niveau et Filière :"
+                    style="@style/textViewLabel"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/editTextHeight"
+                    style="@style/editText"
+                    android:id="@+id/niveauF"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/TextMoyennemntImportantSize"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingTop="@dimen/paddingORmargin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/TextViewWidht"
+                    android:layout_height="wrap_content"
+                    android:text="E-mail :"
+                    style="@style/textViewLabel"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    style="@style/editText"
+                    android:id="@+id/email"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/TextMoyennemntImportantSize"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingTop="@dimen/paddingORmargin"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

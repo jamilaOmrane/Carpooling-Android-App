@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProjetMobile</string>
+    <string name="accueil_recherche">En voiture!</string>
+    <string name="accueil_recherche2">Bonne companies avec des bons Insatiens.</string>
+    <string name="accueil_proposition">Vous prenez le volant bientôt ?</string>
+    <string name="accueil_proposition2">Partagez vos frais en prenant des insatiens.</string>
+</resources>

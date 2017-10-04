@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Components"
+            android:paddingBottom="@dimen/margin"
+            >
+            <Button
+                android:layout_width="@dimen/widthButtonInsciConnexion"
+                android:layout_height="@dimen/heightButtonInsciConnexion"
+                android:text="Inscription"
+                android:layout_alignParentTop="true"
+                android:id="@+id/bouttonInscription"
+                android:layout_toLeftOf="@+id/bouttonConnexion"
+                android:layout_toStartOf="@+id/bouttonConnexion"
+                style="@style/Boutton"
+                />
+            <Button
+                android:layout_width="@dimen/widthButtonInsciConnexion"
+                android:layout_height="@dimen/heightButtonInsciConnexion"
+                android:text="Connexion"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/bouttonConnexion"
+                style="@style/Boutton"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Components">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:src="@drawable/cov"
+                android:layout_gravity=""/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/Components"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accueil_recherche"
+                style="@style/MoyennementImportant"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accueil_recherche2"
+                style="@style/FaiblementImportant"/>
+
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+
+                    android:text="Départ : "
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TVDepart"
+                    style="@style/textViewLabel"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="@dimen/TextFaiblementImportantSize"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ETDepart"
+                    android:layout_alignBaseline="@+id/TVDepart"
+                    android:layout_toRightOf="@+id/TVDepart"
+                    android:layout_toEndOf="@+id/TVDepart"
+
+                    />
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin"
+                    android:paddingTop="@dimen/paddingORmargin"
+                    android:text="Arrivée : "
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/TVDepart"
+                    android:id="@+id/TVArrivee"
+                    style="@style/textViewLabel"
+                    android:textSize="@dimen/TextFaiblementImportantSize"/>
+
+                <EditText
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ETArrivee"
+                    android:layout_toRightOf="@+id/TVArrivee"
+                    android:layout_toEndOf="@+id/TVArrivee"
+                    android:layout_below="@+id/ETDepart"
+                    android:layout_alignBaseline="@+id/TVArrivee"/>
+
+
+                <Button
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="right"
+                    android:layout_below="@+id/ETArrivee"
+                    android:text="Chercher un trajet"
+                    style="@style/Boutton"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/bouttonChercher"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            style="@style/Components"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/volant"/>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accueil_proposition"
+                    style="@style/MoyennementImportant"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accueil_proposition2"
+                    style="@style/FaiblementImportant"/>
+                <Button
+                    android:layout_marginTop="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="Proposer un trajet"
+                    style="@style/Boutton"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/boutonProposer"
+                    />
+
+                android:textAlignment="center"
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="@dimen/widthConducteurComponent"
+        android:layout_height="@dimen/heightConducteurComponent"
+        android:id="@+id/oneItemConducteur"
+        style="@style/Components"
+        android:gravity="center"
+        android:layout_marginRight="0dp"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/conducteurImage"
+            android:src="@drawable/personne"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/conducteurNom"
+            android:layout_below="@+id/conducteurImage"
+            android:text="nom"
+            android:singleLine="true"
+            style="@style/MoyennementImportant"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/conducteurClasse"
+            android:layout_below="@+id/conducteurNom"
+            android:text="MPI"
+            style="@style/FaiblementImportant"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/heightConducteurComponent"
+        android:id="@+id/oneItemProposition"
+        style="@style/Components"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/oneItemDateEtTemp"
+            android:layout_alignParentLeft="true"
+            android:text="Date et Temps"
+            style="@style/MoyennementImportant"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/oneItemIteneraire"
+            android:layout_below="@+id/oneItemDateEtTemp"
+            android:layout_alignParentLeft="true"
+            android:text="Iteneraire"
+            style="@style/FaiblementImportant"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/oneItemPrix"
+            android:layout_alignParentRight="true"
+            android:text="prix"
+            style="@style/MoyennementImportant"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prixText"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/oneItemPrix"
+            android:text="par place"
+            style="@style/FaiblementImportant"/>
+        <TextView
+            android:layout_marginTop="@dimen/margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/oneItemNbrePlace"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/prixText"
+            android:text="0"
+            style="@style/MoyennementImportant"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NmbrePlaceText"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/oneItemNbrePlace"
+            android:text="place(s)"
+            style="@style/FaiblementImportant"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

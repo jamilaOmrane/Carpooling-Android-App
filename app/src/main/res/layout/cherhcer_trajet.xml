@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chercherLayout"
+        style="@style/Components">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Départ"
+            android:id="@+id/TVDepart"
+            style="@style/textViewLabel"/>
+        <EditText
+            android:layout_marginTop="@dimen/paddingORmargin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVDepart"
+            android:id="@+id/ETDepart" />
+        <TextView
+            android:layout_below="@+id/ETDepart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Destination"
+            android:id="@+id/TVArrivee"
+            style="@style/textViewLabel"/>
+        <EditText
+            android:layout_marginTop="@dimen/paddingORmargin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVArrivee"
+            android:id="@+id/ETArrivee" />
+        <TextView
+            android:layout_below="@+id/ETArrivee"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Destination"
+            android:id="@+id/TVDate"
+            style="@style/textViewLabel" />
+        <EditText
+            android:layout_marginTop="@dimen/paddingORmargin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVDate"
+            android:id="@+id/ETDate" />
+
+    </RelativeLayout>
+
+    <Button
+        style="@style/Boutton"
+        android:layout_below="@+id/chercherLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Chercher"
+        android:id="@+id/Bchercher"
+        />
+
+
+</RelativeLayout>

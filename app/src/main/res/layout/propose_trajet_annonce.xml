@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        style="@style/Components"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prixLayout"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prix par passager"
+            android:id="@+id/TVprixTitre"
+            style="@style/textViewLabel"/>
+        <TextView
+            android:layout_marginTop="@dimen/paddingORmargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iteneraire"
+            android:id="@+id/TVitneraire"
+            android:layout_below="@+id/TVprixTitre"
+            style="@style/Important" />
+        <EditText
+            android:layout_marginTop="@dimen/paddingORmargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/ETprix"
+            android:hint="1 Dt"
+            android:layout_toEndOf="@+id/TVitneraire"
+            android:layout_toRightOf="@+id/TVitneraire"
+            android:layout_alignBottom="@+id/TVitneraire"
+            android:layout_marginLeft="30dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/Components"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/placesLayout"
+        android:layout_below="@+id/TVitneraire">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de places proposées"
+            android:id="@+id/TVplaces"
+            style="@style/textViewLabel"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/ETplaces"
+            android:layout_toEndOf="@+id/TVplaces"
+            android:layout_toRightOf="@+id/TVplaces"
+            android:layout_marginLeft="30dp"
+            android:layout_alignBaseline="@+id/TVplaces"
+            android:hint="1"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Components"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/datailsLayout"
+        android:layout_below="@+id/placesLayout"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Détails du voyage"
+            android:id="@+id/TVdetailTitre"
+            style="@style/textViewLabel"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVdetailTitre"
+            android:id="@+id/TVexplicationDetails"
+            android:text="Pour éviter de recevoir des questions, donnez des précisions sur votre trajet."/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ETdetails"
+            android:layout_below="@+id/TVexplicationDetails"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:scrollHorizontally="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TVtailleBagages"
+            android:text="Taille des bagages : "
+            android:layout_below="@+id/ETdetails"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/textViewLabel"
+            android:layout_marginTop="@dimen/margin"/>
+        <Spinner
+            android:layout_marginTop="@dimen/paddingORmargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SpinnerTailleBagage"
+            android:layout_below="@+id/TVtailleBagages"
+            android:layout_alignParentRight="true"
+
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TVflexibilite"
+            android:text="Flexibilité sur le départ : "
+            android:layout_below="@+id/SpinnerTailleBagage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/textViewLabel"
+            android:layout_marginTop="@dimen/margin"/>
+        <Spinner
+            android:layout_marginTop="@dimen/paddingORmargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Spinnerflexibilite"
+            android:layout_below="@+id/TVflexibilite"
+            android:layout_alignParentRight="true"
+
+            />
+
+    </RelativeLayout>
+    <Button
+        style="@style/Boutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Publier"
+        android:id="@+id/Bpublier"
+        />
+
+</LinearLayout>

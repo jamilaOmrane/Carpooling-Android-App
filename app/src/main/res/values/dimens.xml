@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="labelSize">18sp</dimen>
+    <dimen name="ImportantSize">25sp</dimen>
+    <dimen name="paddingORmargin">5dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="widthConducteurComponent">90dp</dimen>
+    <dimen name="heightConducteurComponent">110dp</dimen>
+    <dimen name="TextMoyennemntImportantSize">18sp</dimen>
+    <dimen name="TextFaiblementImportantSize">15sp</dimen>
+    <dimen name="widthButtonInsciConnexion">100dp</dimen>
+    <dimen name="heightButtonInsciConnexion">30dp</dimen>
+    <dimen name="editTextWidth">250dp</dimen>
+    <dimen name="editTextHeight">40dp</dimen>
+    <dimen name="TextViewWidht">110dp</dimen>
+    <dimen name="ImageSize">25dp</dimen>
+</resources>
